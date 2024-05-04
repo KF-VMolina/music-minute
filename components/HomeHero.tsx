@@ -2,9 +2,9 @@
 import React from "react";
 
 const HomeHero = () => {
-  const handleClick = (e) => {
+  const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    document.querySelector("#recientes").scrollIntoView({ behavior: "smooth" });
+    document.querySelector("#recientes")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
